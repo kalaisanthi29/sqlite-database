@@ -1,9 +1,14 @@
+-- adding authors
+
 INSERT INTO Authors (name, country, birth_year) VALUES
 ('A.A. Milne', 'UK', 1882),
 ('E.B. White', 'USA', 1899),
 ('Roald Dahl', 'UK', 1916),
 ('Lewis Carroll', 'UK', 1832),
 ('Eric Carle', 'USA', 1929);
+
+
+-- adding books
 
 INSERT INTO Books (title, genre, author_id) VALUES
 ('Winnie-the-Pooh', 'Children', 1),
@@ -16,6 +21,9 @@ INSERT INTO Books (title, genre, author_id) VALUES
 ('Through the Looking-Glass', 'Fantasy', 4),
 ('The Very Hungry Caterpillar', 'Picture Book', 5),
 ('Brown Bear, Brown Bear, What Do You See?', 'Picture Book', 5);
+
+
+-- adding quotes from the books
 
 INSERT INTO Quotes (quote_text, book_id, author_id) VALUES
 ('You are braver than you believe.', 1, 1),
